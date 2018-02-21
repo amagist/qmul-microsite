@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: qmul-degree-app
+  host: qmul-degree-app
+  disk_quota: 1024M
+  services:
+  - qmul-degree-app-cloudantNoSQLDB
