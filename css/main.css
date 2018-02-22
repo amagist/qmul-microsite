@@ -127,7 +127,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333;
+  color: #6f809f;
   position: relative;
 }
 
@@ -670,6 +670,10 @@ button:focus {
   color: #fff;
 }
 
+.timelineBtn:hover {
+  color: #6f809f;
+}
+
 /* ==========================================================================
   6. Features Section Style
    ========================================================================== */
@@ -684,7 +688,7 @@ button:focus {
 }
 
 #features .section-title {
-  color: #fff;
+  color: #6f809f;
 }
 
 #features .section-subtitle {
@@ -703,6 +707,7 @@ button:focus {
 
 #features .box-item {
   padding: 15px 0;
+  cursor: pointer;
 }
 
 #features .box-item .icon {
@@ -811,17 +816,25 @@ button:focus {
 }
 
 #features .box-item .text h4 {
-  color: #6f809f;
+  color: black;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 22px;
 }
 
+#features .box-item:hover h4{
+  color: #6f809f;
+}
+
 #features .box-item .text p {
   font-size: 14px;
   line-height: 26px;
   color: black;
+}
+
+#features .box-item:hover p{
+  color: #6f809f;
 }
 
 #features .box-item:hover .icon {
@@ -1032,6 +1045,10 @@ button:focus {
 
 .benefits-employer {
   display: inline-block;
+}
+
+.benefit-subtitle {
+  color: #6f809f;
 }
 
 @media (min-width: 360px) and (max-width: 991px) {
@@ -1309,7 +1326,7 @@ button:focus {
   color: #333;
 }
 
-#blog .blog-item-text h3 a:hover {
+#blog .blog-item-text h3  {
   color: #6f809f;
 }
 
