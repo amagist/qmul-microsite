@@ -85,7 +85,7 @@ ul li {
 
 .benefit-list ul li {
   list-style: circle;
-  
+  list-style-position: inside;
 }
 
 a:hover,
@@ -422,6 +422,8 @@ button:focus {
   color: #fff;
   overflow: hidden;
   position: relative;
+  padding-bottom: 200px;
+  width: 100%;
 }
 
 #hero-area .overlay {
@@ -579,14 +581,17 @@ button:focus {
   .navbar-header {
     width: 100%;
   }
+
   .navbar-brand {
     position: absolute;
     padding: 15px;
     top: 0;
   }
   .navbar-brand img {
-    width: 70%;
+    width: 45%;
+    height: 10% !important;
   }
+
   #mobile-menu {
     display: none;
   }
@@ -892,6 +897,21 @@ button:focus {
   display: none;
 }
 
+.test {
+  padding: 60px;
+  background-color: #6f809f;
+  color: white;
+  /*margin: 650px 0% 0% 12%;*/
+  text-align: center;
+  width: 75%;
+  position: absolute;
+  display: inline-block;
+  top: 550px;
+  left 10%;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
 .controls {
   text-align: center;
   padding: 0px 0px 20px;
@@ -981,12 +1001,35 @@ button:focus {
   opacity: 1;
 }
 
-.benefits-student {
-  margin-left: 17%;
+.coloured-background {
+  padding: 5px 10px 5px 10px;
+  background-color: #6f809f;
+}
+
+.benefits-student, .benefits-employer {
+  width: 40%;
+  padding: 10px;
+  margin-left: 75px;
+  background-color: #a4bbe4;
+  color: white;
+  text-align: center;
 }
 
 .benefits-employer {
-  margin-left: 5%;
+  display: inline-block;
+}
+
+@media (min-width: 360px) and (max-width: 991px) {
+    .benefits-employer {
+      margin-top: 40px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 991px) {
+  .benefits-student, .benefits-employer {
+      width: 100%;
+      margin-left: 30px !important;
+  }
 }
 
 /* ==========================================================================

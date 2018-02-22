@@ -5,6 +5,7 @@ applications:
   domain: eu-gb.mybluemix.net
   name: qmul-degree-app
   host: qmul-degree-app
+  command: 'node server.js'
   disk_quota: 1024M
   services:
   - qmul-degree-app-cloudantNoSQLDB
