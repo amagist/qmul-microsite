@@ -531,6 +531,15 @@ button:focus {
   color: #fff !important;
 }
 
+/*.top-nav-collapse .qmullogo {
+  display: block;
+  box-sizing: border-box;
+  background-image: url(../img/qmulblack.png);
+  padding-left: 10px;
+  height: 60px;
+  width: 180px;
+}*/
+
 .indigo {
   background: transparent;
 }
@@ -936,6 +945,14 @@ button:focus {
   left 10%;
   opacity: 0.9;
   font-size: 14px;
+}
+
+#portfolios .section-subtitle a {
+  color: black;
+}
+
+#portfolios .section-subtitle a:hover{
+  color: #6f809f;
 }
 
 .controls {

@@ -19,7 +19,9 @@
     "errorhandler": "1.5.x",
     "express": "4.15.x",
     "method-override": "2.3.x",
-    "morgan": "1.8.x"
+    "morgan": "1.8.x",
+    "prompt-sync": "^4.1.5",
+    "watson-developer-cloud": "^3.0.6"
   },
   "repository": {},
   "engines": {
