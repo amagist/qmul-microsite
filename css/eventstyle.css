@@ -303,6 +303,11 @@ Main Components
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
 }
+
+.events-content .eventslink:hover a {
+  color: #6f809f;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 2rem;
