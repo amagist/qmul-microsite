@@ -1,3 +1,7 @@
+declared-services:
+ conversation-service:
+   label: conversation
+   plan: free
 applications:
 - path: .
   memory: 512M
