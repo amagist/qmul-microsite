@@ -495,6 +495,10 @@ button:focus {
   color: #6f809f;
 }
 
+#hero-area .contents .social-icons{
+  margin-right: 4%;
+}
+
 /* ==========================================================================
    4. Navbar Style
    ========================================================================== */
@@ -1169,17 +1173,22 @@ button:focus {
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
+ .key-contact {
+   font-size: 42px;
+   margin-top: 0;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #6f809f;
+   position: relative;
+   text-align: center;
+ }
+
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  /*background: url(../img/testimonial-bg.jpg) fixed no-repeat;*/
   background-size: cover;
-  color: #fff;
+  color: #6f809f;
   overflow: hidden;
   position: relative;
-}
-
-.section-subtitle .key-contact {
-  position: absolute;
-  margin-left: 250px;
 }
 
 .testimonial-item {
@@ -1188,7 +1197,7 @@ button:focus {
 
 .testimonial-item img {
   width: 80px;
-  border: 3px solid #fff;
+  border: 3px solid #6f809f;
   height: 80px;
   border-radius: 50%;
 }
