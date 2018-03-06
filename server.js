@@ -1,7 +1,60 @@
-var connect = require('connect');
-var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(8080, function () {
-    console.log('Server running on 8080...');
+// var connect = require('connect');
+// var serveStatic = require('serve-static');
+// connect().use(serveStatic(__dirname)).listen(8080, function () {
+//     console.log('Server running on 8000...');
+// });
+
+var http = require('http');
+var express = require("express");
+var RED = require("node-red");
+var path = require('path');
+
+// Create an Express app
+var app = express();
+
+// Add a simple route for static content served from 'public'
+app.use("/",express.static("public"));
+
+
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname = "index.html"));
+//     res.send
+// });
+
+
+// Create a server
+var server = http.createServer(app);
+
+// Create the settings object - see default settings.js file for other options
+var settings = {
+    httpAdminRoot:"/red",
+    httpNodeRoot: "/api",
+    userDir:"/Users/nol/.nodered/",
+    functionGlobalContext: { }    // enables global context
+};
+
+// Initialise the runtime with a server and settings
+RED.init(server,settings);
+
+// Serve the editor UI from /red
+app.use(settings.httpAdminRoot,RED.httpAdmin);
+
+// Serve the http nodes UI from /api
+app.use(settings.httpNodeRoot,RED.httpNode);
+
+server.listen(8000);
+
+// Start the runtime
+RED.start();
+
+var htmlPath = path.join(__dirname, 'home');
+
+app.use(express.static(htmlPath));
+
+var server = app.listen(8000, function () {
+    var host = 'localhost';
+    var port = server.address().port;
+    console.log('yay it worked!');
 });
 //# sourceMappingURL=server.js.map
 
