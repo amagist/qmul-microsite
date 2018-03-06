@@ -44,18 +44,16 @@ app.use(settings.httpNodeRoot,RED.httpNode);
 
 server.listen(8000);
 
-// Start the runtime
-RED.start();
-
 var htmlPath = path.join(__dirname, 'home');
 
 app.use(express.static(htmlPath));
+console.log('yay it worked!');
 
-var server = app.listen(8000, function () {
-    var host = 'localhost';
-    var port = server.address().port;
-    console.log('yay it worked!');
-});
+// Start the runtime
+RED.start();
+
+//Run whole project locally - has to be a different port to NodeRED call apparently - stupid dumb shit
+
 //# sourceMappingURL=server.js.map
 
 // Example 2: adds user input and detects intents.
