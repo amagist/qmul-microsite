@@ -11,6 +11,15 @@
         }
     });
 
+    //changes QMUL logo from white to black when navbar collapses
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 150) {
+            $(".qmullogo").attr("src", "img/qmulblack.png");
+        } else {
+            $(".qmullogo").attr("src", "img/qmul.png");
+        }
+    });
+
     /*
    One Page Navigation & wow js
    ========================================================================== */
@@ -141,7 +150,7 @@
         scrollTop: 0
       }, 600);
       return false;
-    })
+    });
 
 /* Nivo Lightbox
   ========================================================*/
